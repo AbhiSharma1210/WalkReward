@@ -5,7 +5,12 @@ libs = ['lib']
 gas_reports = ["*"]
 optimizer = true
 optimizer_runs = 20000
-fs_permissions = [{ access = "read", path = "lib/foundry-chainlink-toolkit/out"}]
+fs_permissions = [
+    { access = "read", path = "lib/foundry-chainlink-toolkit/out" },
+]
+remappings = [
+    '@Chainlink/conrtacts=/lib/chainlink-brownie-contracts/contracts/',
+]
 
 # Remappings in remappings.txt
 
