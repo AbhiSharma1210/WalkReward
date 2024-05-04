@@ -9,7 +9,10 @@ fs_permissions = [
     { access = "read", path = "lib/foundry-chainlink-toolkit/out" },
 ]
 remappings = [
-    '@Chainlink/conrtacts=/lib/chainlink-brownie-contracts/contracts/',
+    '@chainlink/contracts=lib/chainlink-brownie-contracts/contracts/',
+    '@chainlink/test=../../lib/chainlink-brownie-contracts/contracts/',
+    '@solmate=lib/solmate/src/',
+    '@solmateTest=../../lib/solmate/src/',
 ]
 
 # Remappings in remappings.txt

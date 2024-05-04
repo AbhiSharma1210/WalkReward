@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol";
-import "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
+import "../../lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol";
+import "../../lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
 
 /**
  * @title The LinkTokenReceiver contract - used for the MockOracle below
@@ -177,11 +177,10 @@ contract MockOracle is ChainlinkRequestInterface, LinkTokenReceiver {
      * @param _data The data to return to the consuming contract
      * @return Status if the external call was successful
      */
-    function fulfillOracleRequest(bytes32 _requestId, bytes32 _data)
-        external
-        isValidRequest(_requestId)
-        returns (bool)
-    {
+    function fulfillOracleRequest(
+        bytes32 _requestId,
+        bytes32 _data
+    ) external isValidRequest(_requestId) returns (bool) {
         Request memory req = commitments[_requestId];
         delete commitments[_requestId];
         require(
