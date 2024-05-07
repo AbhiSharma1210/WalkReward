@@ -4,7 +4,7 @@ pragma solidity ^0.8.18;
 import {ERC721} from "@Openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {Base64} from "@Openzeppelin/contracts/utils/Base64.sol";
 
-contract WalkReward {
+contract WalkReward is ERC721 {
     //errors
     error ColorNft__CantFlipColorIfNotOwner();
 
