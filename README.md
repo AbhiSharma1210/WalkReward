@@ -8,4 +8,3 @@ The aim of this project is to reward user with an NFT based on the distance they
 1. Custom build NFT badge possibly utilizing a Genrative AI for image.
 2. Dynamic NFT that updates itself instead of adding a new NFT and cluttering the wallet.
 3. A simple HTML page that links with the smart contract to update the walk distance.
-4. 
