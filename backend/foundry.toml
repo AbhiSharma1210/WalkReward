@@ -9,11 +9,10 @@ fs_permissions = [
     { access = "read", path = "lib/foundry-chainlink-toolkit/out" },
 ]
 remappings = [
-    '@chainlink/contracts=backend/lib/chainlink-brownie-contracts/contracts/',
-    '@solmate=backend/lib/solmate/src/',
-    '@openzeppelin/contracts=backend/lib/openzeppelin-contracts/contracts',
+    '@chainlink/contracts=lib/chainlink-brownie-contracts/contracts/',
+    '@solmate=lib/solmate/src/',
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
 ]
-
 # Remappings in remappings.txt
 
 # See more config options https://github.com/gakonst/foundry/tree/master/config
