@@ -1,0 +1,14 @@
+{
+    "abi": [
+        // ABI array here
+    ],
+    "networks": {
+        "1": {
+            "address": "0xContractAddressOnMainnet" // Address of the contract after deployment on testnet/mainnet
+        },
+        "4": {
+            "address": "0xContractAddressOnRinkeby" // 
+        },
+        // other network ids and addresses
+    }
+}
